@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Harorat Konvertori</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Harorat Konvertori</h1>
+
+        <div class="input-group">
+            <label for="temperature">Harorat qiymati:</label>
+            <input type="number" id="temperature" placeholder="Haroratni kiriting" step="any">
+        </div>
+
+        <div class="input-group">
+            <label for="scale">Shkalani tanlang:</label>
+            <select id="scale">
+                <option value="celsius">Selsiy (°C)</option>
+                <option value="fahrenheit">Farengeyt (°F)</option>
+                <option value="kelvin">Kelvin (K)</option>
+            </select>
+            </div>
+
+        <button id="convertBtn">Konvertatsiya qilish</button>
+
+        <div class="results" id="results">
+            <h2>Natijalar</h2>
+            <div class="result-item">
+                <span class="result-label">Selsiy (°C):</span>
+                <span class="result-value" id="celsiusResult">-</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Farengeyt (°F):</span>
+                <span class="result-value" id="fahrenheitResult">-</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Kelvin (K):</span>
+                <span class="result-value" id="kelvinResult">-</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js">
+    </script>
+</body>
+</html>
